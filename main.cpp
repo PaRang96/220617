@@ -1,11 +1,12 @@
 #include <iostream>
+#define DIGIT 8
 
 using namespace std;
 
 int main()
 {
-	int TempArray[8] = { 0, };
-	int ResultArray[8] = { 0, };
+	int TempArray[DIGIT] = { 0, };
+	int ResultArray[DIGIT] = { 0, };
 
 	int Input;
 	int temp = 0;
@@ -26,13 +27,13 @@ int main()
 	}
 
 	// reverse to result array
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < DIGIT; i++)
 	{
 		ResultArray[i] = TempArray[7 - i];
 	}
 
 	// print
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < DIGIT; i++)
 	{
 		cout << ResultArray[i];
 	}
